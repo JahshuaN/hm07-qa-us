@@ -1,8 +1,6 @@
 const config = require('../config');
-
 const requestBody = {
 	"price": 175
-
     }
 test('Status code should be 200', async () => {
 	let actualStatus

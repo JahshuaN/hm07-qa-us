@@ -1,5 +1,4 @@
 const config = require('../config');
-
 const requestBody = {
     "productsList": [
     {
@@ -9,7 +8,7 @@ const requestBody = {
   ]
 }
 
-test('Status code should be 201', async () => {
+test('Should be 201', async () => {
 	let actualStatus;
     try {
 		const response = await fetch(`${config.API_URL}/api/v1/orders`, {

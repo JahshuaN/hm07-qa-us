@@ -25,7 +25,7 @@ test('Should be 201', async () => {
 	expect(actualStatus).toBe(201);
 });
 
-test('Response body should contain...', async () => {
+test('Should contain response from post...', async () => {
 	let actualResponseBody;
     try {
 		const response = await fetch(`${config.API_URL}/api/v1/orders`, {

@@ -6,13 +6,8 @@ test('Should return status 200', async () => {
         const response = await fetch(`${config.API_URL}/api/v1/kits/1`, {
             method: 'DELETE'
         });
-        
-        console.log(response);
         const actualStatus = response.status;
         const responseBody = await response.json();
-        
-        console.log(actualStatus);
-        console.log(responseBody);
 
         expect(actualStatus).toBe(200);
     } catch (error) {

@@ -1,9 +1,7 @@
-// eslint-disable-next-line no-undef
 const fetch = require('node-fetch');
 const config = require('../config');
 
-// Test to check the status code
-test('DELETE request should return status 200', async () => {
+test('Should return status 200', async () => {
     try {
         const response = await fetch(`${config.API_URL}/api/v1/kits/1`, {
             method: 'DELETE'
@@ -22,17 +20,13 @@ test('DELETE request should return status 200', async () => {
     }
 });
 
-//Test2
 test('Should be true...', async () => {
 	let actualResponseBody;
     try {
 		const response = await fetch(`${config.API_URL}/api/v1/kits/1`, {
 			method: 'DELETE'
 		});
-			// Extract response body
 			const responseBody = await response.json();
-
-			// Check response body
 			expect(responseBody).toEqual({ ok: true });
 		} catch (error) {
 			console.error('Error:', error);

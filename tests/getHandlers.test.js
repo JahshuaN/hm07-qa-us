@@ -1,7 +1,4 @@
-// eslint-disable-next-line no-undef
 const config = require('../config');
-
-//First Test Case
 test('Should return 200 status code...', async () => {
     let actualStatus;
     try {
@@ -12,8 +9,6 @@ test('Should return 200 status code...', async () => {
     }
     expect(actualStatus).toBe(200);
 });
-
-//Second Test Case
 test('Body should contain respone for GET...', async () => {
     let actualResponseBody;
     try {

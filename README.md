@@ -16,13 +16,10 @@ follow these steps the get started with project
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/your-repo.git
-   cd your-repo
+git clone https:github.com/your-username/your-repo.git 
+cd your-repo
+
 2. install dependencies: npm install
 3. Create Config file in the root directory: module.exports = {API_URL: 'https://insert url.com'}
 4. Run the test with either npx jest tests/deleteHandlers.test.js, npx jest tests/putHandlers.test.js, npx jest tests/postHandlers.test.js, or npx jest tests/getHandlers.test.js
 5. check the output for either passing or failing tests along with error messages
-6. 
-=======
-# Sprint 7 project
->>>>>>> a8cc8e5278706646238a973ef1da2b7b82b1b7e3

@@ -1,5 +1,3 @@
-// eslint-disable-next-line no-undef
-//Test 1
 const config = require('../config');
 
 const requestBody = {
@@ -28,7 +26,6 @@ test('Status code should be 201', async () => {
 	expect(actualStatus).toBe(201);
 });
 
-//Test 2
 test('Response body should contain...', async () => {
 	let actualResponseBody;
     try {

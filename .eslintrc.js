@@ -1,3 +1,5 @@
+/*If I am missing something else PLEASE LIST IT!! vauge responses do not help me.
+
 /* eslint-disable no-undef */
 module.exports = {
     "env": {

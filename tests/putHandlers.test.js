@@ -2,7 +2,7 @@ const config = require('../config');
 const requestBody = {
 	"price": 175
     }
-test('Should be 200', async () => {
+test('Should return status of 200', async () => {
 	let actualStatus
     try {
 		const response = await fetch(`${config.API_URL}/api/v1/products/1`, {
@@ -18,7 +18,7 @@ test('Should be 200', async () => {
 	}
 	expect(actualStatus).toBe(200);
 });
-test('Should be true...', async () => {
+test('Should return status as OK:true...', async () => {
 	let actualResponseBody;
     try {
 		const response = await fetch(`${config.API_URL}/api/v1/products/1`, {

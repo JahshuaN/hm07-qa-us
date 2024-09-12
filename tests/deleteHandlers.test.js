@@ -7,8 +7,6 @@ test('Should return status 200', async () => {
             method: 'DELETE'
         });
         const actualStatus = response.status;
-        const responseBody = await response.json();
-
         expect(actualStatus).toBe(200);
     } catch (error) {
         console.error('Error:', error);
